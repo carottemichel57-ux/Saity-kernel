@@ -19,9 +19,9 @@ int module_start(SceSize argc, const void *args) {
         ksceIoWrite(fd, msg, sizeof(msg) - 1);
         ksceIoClose(fd);
     }
-    return SCE_KERNEL_START_SUCCESS;
+    return 0;   /* succes */
 }
 
 int module_stop(SceSize argc, const void *args) {
-    return SCE_KERNEL_STOP_SUCCESS;
+    return 0;   /* succes */
 }
